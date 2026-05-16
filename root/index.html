@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Balans Masaže – Premium wellness i masažni centar u Sarajevu. Relaks, medicinska, sportska masaža i hidžama tretmani."
+    />
+    <title>Balans Masaže – Sarajevo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════════
+       LANGUAGE TOGGLE
+       Changes all .bs-text / .en-text elements
+  ══════════════════════════════════════════ -->
+    <div id="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('bs')" id="btn-bs">
+        BS
+      </button>
+      <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">Balans <span>Masaže</span></a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#about"
+            ><span class="bs-text">O nama</span
+            ><span class="en-text" style="display: none">About</span></a
+          >
+        </li>
+        <li>
+          <a href="#services"
+            ><span class="bs-text">Usluge</span
+            ><span class="en-text" style="display: none">Services</span></a
+          >
+        </li>
+        <li>
+          <a href="#pricing"
+            ><span class="bs-text">Cjenovnik</span
+            ><span class="en-text" style="display: none">Pricing</span></a
+          >
+        </li>
+        <li>
+          <a href="#gallery"
+            ><span class="bs-text">Galerija</span
+            ><span class="en-text" style="display: none">Gallery</span></a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><span class="bs-text">Kontakt</span
+            ><span class="en-text" style="display: none">Contact</span></a
+          >
+        </li>
+      </ul>
+
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════
+       MOBILE MENU (full-screen overlay)
+  ══════════════════════════════════════════ -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" onclick="toggleMenu()">✕</button>
+      <a href="#about" onclick="toggleMenu()"
+        ><span class="bs-text">O nama</span
+        ><span class="en-text" style="display: none">About</span></a
+      >
+      <a href="#services" onclick="toggleMenu()"
+        ><span class="bs-text">Usluge</span
+        ><span class="en-text" style="display: none">Services</span></a
+      >
+      <a href="#pricing" onclick="toggleMenu()"
+        ><span class="bs-text">Cjenovnik</span
+        ><span class="en-text" style="display: none">Pricing</span></a
+      >
+      <a href="#gallery" onclick="toggleMenu()"
+        ><span class="bs-text">Galerija</span
+        ><span class="en-text" style="display: none">Gallery</span></a
+      >
+      <a href="#contact" onclick="toggleMenu()"
+        ><span class="bs-text">Kontakt</span
+        ><span class="en-text" style="display: none">Contact</span></a
+      >
+    </div>
+
+    <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="particles" id="particles"></div>
+      <div class="hero-line hero-line-1"></div>
+      <div class="hero-line hero-line-2"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="bs-text">Wellness &amp; Masaže — Sarajevo</span>
+          <span class="en-text" style="display: none"
+            >Wellness &amp; Massage — Sarajevo</span
+          >
+        </div>
+
+        <h1 class="hero-logo">Balans <em>Masaže</em></h1>
+
+        <p class="hero-headline">
+          <span class="bs-text">„Vaš trenutak mira počinje ovdje."</span>
+          <span class="en-text" style="display: none"
+            >"Your moment of peace begins here."</span
+          >
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">
+            <span class="bs-text">Rezerviši termin</span>
+            <span class="en-text" style="display: none">Book Appointment</span>
+          </a>
+          <a href="#services" class="btn-outline">
+            <span class="bs-text">Naše usluge</span>
+            <span class="en-text" style="display: none">Our Services</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-hint-line"></div>
+        <span class="bs-text">Skroluj</span>
+        <span class="en-text" style="display: none">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       FLOATING BUTTONS (WhatsApp + Instagram)
+       Fixed to bottom-right corner
+  ══════════════════════════════════════════ -->
+    <div class="floating-buttons">
+      <a
+        href="https://wa.me/38767114561"
+        target="_blank"
+        class="float-btn float-btn-wa"
+        title="WhatsApp"
+        >💬</a
+      >
+      <a
+        href="https://instagram.com/balans.masaze"
+        target="_blank"
+        class="float-btn float-btn-ig"
+        title="Instagram"
+        >📷</a
+      >
+    </div>
+
+    <!-- ══════════════════════════════════════════
+       ABOUT SECTION
+  ══════════════════════════════════════════ -->
+    <section id="about">
+      <div class="about-inner">
+        <!-- Left: decorative image frame -->
+        <div class="about-visual reveal">
+          <div class="about-img-frame">
+            <div class="about-img-inner">🪨</div>
+          </div>
+          <div class="about-badge">
+            <strong>5★</strong>
+            <span class="bs-text">Recenzije</span>
+            <span class="en-text" style="display: none">Reviews</span>
+          </div>
+        </div>
+
+        <!-- Right: text content -->
+        <div class="about-text">
+          <div class="section-label reveal">
+            <span class="bs-text">O nama</span>
+            <span class="en-text" style="display: none">About Us</span>
+          </div>
+
+          <h2 class="section-title reveal">
+            <span class="bs-text"><em>Ravnoteža</em> tijela i uma</span>
+            <span class="en-text" style="display: none"
+              >The <em>balance</em> of body and mind</span
+            >
+          </h2>
+
+          <p class="section-text reveal">
+            <span class="bs-text">
+              U Balans Masaže centru, svaki tretman je pažljivo prilagođen vašim
+              individualnim potrebama. Naš tim profesionalnih terapeuta
+              kombinuje znanje i iskustvo s dubokim razumijevanjem tijela,
+              pružajući vam relaksaciju, oporavak i unutarnji mir u svakom
+              posjetu.
+            </span>
+            <span class="en-text" style="display: none">
+              At Balans Masaže, every treatment is carefully tailored to your
+              individual needs. Our team of professional therapists combines
+              knowledge and experience with a deep understanding of the body,
+              offering relaxation, recovery, and inner peace with every visit.
+            </span>
+          </p>
+
+          <p class="section-text reveal" style="margin-top: 1.2rem">
+            <span class="bs-text">
+              Smješteni u srcu Sarajeva, stvaramo prostor gdje stres nestaje,
+              mišići se opuštaju i energija vraća. Vjerujemo da pravo wellness
+              iskustvo počinje s pažnjom, a završava s transformacijom.
+            </span>
+            <span class="en-text" style="display: none">
+              Located in the heart of Sarajevo, we create a space where stress
+              dissolves, muscles relax, and energy returns. We believe that a
+              true wellness experience begins with attention and ends with
+              transformation.
+            </span>
+          </p>
+
+          <!-- Stats grid -->
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <div class="stat-number shimmer-text">500+</div>
+              <div class="stat-label">
+                <span class="bs-text">Zadovoljnih klijenata</span>
+                <span class="en-text" style="display: none">Happy Clients</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number shimmer-text">4</div>
+              <div class="stat-label">
+                <span class="bs-text">Vrste tretmana</span>
+                <span class="en-text" style="display: none"
+                  >Treatment Types</span
+                >
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number shimmer-text">5★</div>
+              <div class="stat-label">
+                <span class="bs-text">Prosječna ocjena</span>
+                <span class="en-text" style="display: none"
+                  >Average Rating</span
+                >
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number shimmer-text">100%</div>
+              <div class="stat-label">
+                <span class="bs-text">Profesionalnost</span>
+                <span class="en-text" style="display: none"
+                  >Professionalism</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /about-text -->
+      </div>
+      <!-- /about-inner -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       SERVICES SECTION
+  ══════════════════════════════════════════ -->
+    <section id="services">
+      <div class="services-inner">
+        <div class="section-label reveal">
+          <span class="bs-text">Naše usluge</span>
+          <span class="en-text" style="display: none">Our Services</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="bs-text">Tretmani za <em>svaku potrebu</em></span>
+          <span class="en-text" style="display: none"
+            >Treatments for <em>every need</em></span
+          >
+        </h2>
+
+        <div class="services-grid">
+          <!-- Card 1: Relax Massage -->
+          <div class="service-card reveal reveal-delay-1">
+            <span class="service-icon">🌿</span>
+            <div class="service-name">
+              <span class="bs-text">Relaks masaža</span>
+              <span class="en-text" style="display: none">Relax Massage</span>
+            </div>
+            <div class="service-name-en">
+              <span class="bs-text">Relax Massage</span>
+              <span class="en-text" style="display: none">Relaks masaža</span>
+            </div>
+            <p class="service-desc">
+              <span class="bs-text"
+                >Potpuno opuštanje tijela i uma kroz nježne, ritmičke pokrete.
+                Idealno za oslobađanje svakodnevnog stresa i umora.</span
+              >
+              <span class="en-text" style="display: none"
+                >Complete relaxation of body and mind through gentle, rhythmic
+                movements. Ideal for releasing everyday stress and
+                fatigue.</span
+              >
+            </p>
+          </div>
+
+          <!-- Card 2: Medical Massage -->
+          <div class="service-card reveal reveal-delay-2">
+            <span class="service-icon">⚕️</span>
+            <div class="service-name">
+              <span class="bs-text">Medicinska masaža</span>
+              <span class="en-text" style="display: none">Medical Massage</span>
+            </div>
+            <div class="service-name-en">
+              <span class="bs-text">Medical Massage</span>
+              <span class="en-text" style="display: none"
+                >Medicinska masaža</span
+              >
+            </div>
+            <p class="service-desc">
+              <span class="bs-text"
+                >Terapeutski pristup za ublažavanje bolova, poboljšanje
+                cirkulacije i tretman mišićno-koštanih tegoba. Precizno i
+                stručno.</span
+              >
+              <span class="en-text" style="display: none"
+                >A therapeutic approach to relieving pain, improving
+                circulation, and treating musculoskeletal issues. Precise and
+                expert.</span
+              >
+            </p>
+          </div>
+
+          <!-- Card 3: Sports Massage -->
+          <div class="service-card reveal reveal-delay-3">
+            <span class="service-icon">🏋️</span>
+            <div class="service-name">
+              <span class="bs-text">Sportska masaža</span>
+              <span class="en-text" style="display: none">Sports Massage</span>
+            </div>
+            <div class="service-name-en">
+              <span class="bs-text">Sports Massage</span>
+              <span class="en-text" style="display: none">Sportska masaža</span>
+            </div>
+            <p class="service-desc">
+              <span class="bs-text"
+                >Dizajnirana za sportaše i aktivne osobe — ubrzava oporavak,
+                smanjuje napetost mišića i poboljšava performanse.</span
+              >
+              <span class="en-text" style="display: none"
+                >Designed for athletes and active individuals — accelerates
+                recovery, reduces muscle tension, and improves
+                performance.</span
+              >
+            </p>
+          </div>
+
+          <!-- Card 4: Hijama -->
+          <div class="service-card reveal reveal-delay-4">
+            <span class="service-icon">🫙</span>
+            <div class="service-name">
+              <span class="bs-text">Hidžama</span>
+              <span class="en-text" style="display: none">Hijama Therapy</span>
+            </div>
+            <div class="service-name-en">
+              <span class="bs-text">Hijama Therapy</span>
+              <span class="en-text" style="display: none"
+                >Hidžama terapija</span
+              >
+            </div>
+            <p class="service-desc">
+              <span class="bs-text"
+                >Drevna terapija čašicama za detoksikaciju, poboljšanje protoka
+                energije i opšte jačanje organizma. Suha i mokra
+                varijanta.</span
+              >
+              <span class="en-text" style="display: none"
+                >An ancient cupping therapy for detoxification, energy flow
+                improvement, and overall body strengthening. Dry and wet
+                varieties available.</span
+              >
+            </p>
+          </div>
+        </div>
+        <!-- /services-grid -->
+      </div>
+      <!-- /services-inner -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       PRICING SECTION
+  ══════════════════════════════════════════ -->
+    <section id="pricing">
+      <div class="pricing-inner">
+        <div class="section-label reveal">
+          <span class="bs-text">Cjenovnik</span>
+          <span class="en-text" style="display: none">Pricing</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="bs-text">Transparentne <em>cijene</em></span>
+          <span class="en-text" style="display: none"
+            >Transparent <em>pricing</em></span
+          >
+        </h2>
+
+        <div class="pricing-grid">
+          <!-- Relax -->
+          <div class="price-card reveal reveal-delay-1">
+            <div class="price-header">
+              <div class="price-category">
+                <span class="bs-text">Kategorija 01</span>
+                <span class="en-text" style="display: none">Category 01</span>
+              </div>
+              <div class="price-title">
+                <span class="bs-text">Relaks masaže</span>
+                <span class="en-text" style="display: none">Relax Massage</span>
+              </div>
+            </div>
+            <div class="price-items">
+              <div class="price-item">
+                <span class="price-duration">30 min</span>
+                <span class="price-amount">35 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">45 min</span>
+                <span class="price-amount">45 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">60 min</span>
+                <span class="price-amount">55 <span>KM</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medical (featured) -->
+          <div class="price-card featured reveal reveal-delay-2">
+            <div class="price-header">
+              <div class="price-category">
+                <span class="bs-text">Kategorija 02</span>
+                <span class="en-text" style="display: none">Category 02</span>
+              </div>
+              <div class="price-title">
+                <span class="bs-text">Medicinske masaže</span>
+                <span class="en-text" style="display: none"
+                  >Medical Massage</span
+                >
+              </div>
+            </div>
+            <div class="price-items">
+              <div class="price-item">
+                <span class="price-duration">30 min</span>
+                <span class="price-amount">40 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">45 min</span>
+                <span class="price-amount">50 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">60 min</span>
+                <span class="price-amount">60 <span>KM</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sports -->
+          <div class="price-card reveal reveal-delay-3">
+            <div class="price-header">
+              <div class="price-category">
+                <span class="bs-text">Kategorija 03</span>
+                <span class="en-text" style="display: none">Category 03</span>
+              </div>
+              <div class="price-title">
+                <span class="bs-text">Sportske masaže</span>
+                <span class="en-text" style="display: none"
+                  >Sports Massage</span
+                >
+              </div>
+            </div>
+            <div class="price-items">
+              <div class="price-item">
+                <span class="price-duration">30 min</span>
+                <span class="price-amount">50 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">45 min</span>
+                <span class="price-amount">60 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">60 min</span>
+                <span class="price-amount">70 <span>KM</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hijama -->
+          <div class="price-card reveal reveal-delay-4">
+            <div class="price-header">
+              <div class="price-category">
+                <span class="bs-text">Posebni tretmani</span>
+                <span class="en-text" style="display: none"
+                  >Special Treatments</span
+                >
+              </div>
+              <div class="price-title">
+                <span class="bs-text">Hidžama</span>
+                <span class="en-text" style="display: none"
+                  >Hijama Therapy</span
+                >
+              </div>
+            </div>
+            <div class="price-items">
+              <div class="price-item">
+                <span class="price-duration">
+                  <span class="bs-text">Suha hidžama</span>
+                  <span class="en-text" style="display: none">Dry Hijama</span>
+                </span>
+                <span class="price-amount">30 <span>KM</span></span>
+              </div>
+              <div class="price-item">
+                <span class="price-duration">
+                  <span class="bs-text">Hidžama</span>
+                  <span class="en-text" style="display: none">Hijama</span>
+                </span>
+                <span class="price-amount">60 <span>KM</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /pricing-grid -->
+      </div>
+      <!-- /pricing-inner -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       GALLERY SECTION
+       Replace emoji with real <img> tags when
+       you have actual photos.
+  ══════════════════════════════════════════ -->
+    <section id="gallery">
+      <div class="gallery-inner">
+        <div class="section-label reveal">
+          <span class="bs-text">Galerija</span>
+          <span class="en-text" style="display: none">Gallery</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="bs-text">Atmosfera <em>mira</em></span>
+          <span class="en-text" style="display: none"
+            >An atmosphere of <em>peace</em></span
+          >
+        </h2>
+
+        <div class="gallery-grid reveal">
+          <div class="gallery-item">
+            <div class="gallery-img" style="font-size: 5rem">🪨</div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Kamenje za masažu</span>
+                <span class="en-text" style="display: none">Hot Stones</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-img">🕯️</div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Svjećana atmosfera</span>
+                <span class="en-text" style="display: none"
+                  >Candlelit Ambience</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div
+              class="gallery-img"
+              style="background: linear-gradient(135deg, #0d0f08, #161a0d)"
+            >
+              🌸
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Relax prostor</span>
+                <span class="en-text" style="display: none"
+                  >Relaxation Space</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-img">💆</div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Tretman masaže</span>
+                <span class="en-text" style="display: none"
+                  >Massage Treatment</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div
+              class="gallery-img"
+              style="background: linear-gradient(135deg, #120d0a, #0a0a0a)"
+            >
+              🫚
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Aromatična ulja</span>
+                <span class="en-text" style="display: none">Aromatic Oils</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-img" style="font-size: 5rem">🫙</div>
+            <div class="gallery-overlay">
+              <span class="gallery-caption">
+                <span class="bs-text">Hidžama čašice</span>
+                <span class="en-text" style="display: none">Hijama Cups</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- /gallery-grid -->
+      </div>
+      <!-- /gallery-inner -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       TESTIMONIALS SECTION
+  ══════════════════════════════════════════ -->
+    <section id="testimonials">
+      <div class="testimonials-inner">
+        <div class="section-label reveal">
+          <span class="bs-text">Recenzije</span>
+          <span class="en-text" style="display: none">Testimonials</span>
+        </div>
+        <h2 class="section-title reveal">
+          <span class="bs-text">Šta kažu naši <em>klijenti</em></span>
+          <span class="en-text" style="display: none"
+            >What our <em>clients</em> say</span
+          >
+        </h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              <span class="bs-text"
+                >"Nevjerovatno iskustvo! Stres od posla je potpuno nestao nakon
+                prve sesije. Profesionalan pristup i ugodna atmosfera.
+                Preporučujem svima."</span
+              >
+              <span class="en-text" style="display: none"
+                >"An incredible experience! Work stress completely vanished
+                after the first session. Professional approach and a pleasant
+                atmosphere. I recommend it to everyone."</span
+              >
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <div class="author-name">Amina K.</div>
+                <div class="author-sub">Sarajevo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              <span class="bs-text"
+                >"Dolazim redovno zbog bolova u leđima. Medicinska masaža je
+                stvarno pomogla — terapeut je stručan i pažljiv. Jedino mjesto
+                gdje se osjećam bolje."</span
+              >
+              <span class="en-text" style="display: none"
+                >"I come regularly for back pain. The medical massage really
+                helped — the therapist is skilled and attentive. The only place
+                where I feel truly better."</span
+              >
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <div class="author-name">Mirsad H.</div>
+                <div class="author-sub">Sarajevo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              <span class="bs-text"
+                >"Hidžama je promijenila moj život. Osjećam se energičnije i
+                zdravije. Osoblje je ljubazno, prostor je miran i elegantan.
+                Zlatni standard wellness-a u Sarajevu."</span
+              >
+              <span class="en-text" style="display: none"
+                >"Hijama has changed my life. I feel more energetic and
+                healthier. The staff is kind, the space is calm and elegant. The
+                golden standard of wellness in Sarajevo."</span
+              >
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <div class="author-name">Sara M.</div>
+                <div class="author-sub">Sarajevo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /testimonials-grid -->
+      </div>
+      <!-- /testimonials-inner -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       CONTACT & BOOKING SECTION
+  ══════════════════════════════════════════ -->
+    <section id="contact">
+      <div class="contact-outer">
+        <div class="section-label reveal">
+          <span class="bs-text">Kontakt &amp; Rezervacije</span>
+          <span class="en-text" style="display: none"
+            >Contact &amp; Booking</span
+          >
+        </div>
+        <h2 class="section-title reveal">
+          <span class="bs-text">Rezervišite vaš <em>tretman</em></span>
+          <span class="en-text" style="display: none"
+            >Book your <em>treatment</em></span
+          >
+        </h2>
+
+        <div class="contact-wrap">
+          <!-- Left: contact info cards -->
+          <div class="contact-info">
+            <a href="tel:+38767114561" class="contact-card reveal">
+              <span class="contact-icon">📞</span>
+              <div>
+                <div class="contact-label">
+                  <span class="bs-text">Telefon</span>
+                  <span class="en-text" style="display: none">Phone</span>
+                </div>
+                <div class="contact-value">+387 67 11 45 561</div>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/38767114561"
+              target="_blank"
+              class="contact-card reveal reveal-delay-1"
+            >
+              <span class="contact-icon">💬</span>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value">+387 67 11 45 561</div>
+              </div>
+            </a>
+
+            <a
+              href="https://instagram.com/balans.masaze"
+              target="_blank"
+              class="contact-card reveal reveal-delay-2"
+            >
+              <span class="contact-icon">📷</span>
+              <div>
+                <div class="contact-label">Instagram</div>
+                <div class="contact-value">@balans.masaze</div>
+              </div>
+            </a>
+
+            <!-- Opening hours card -->
+            <div
+              class="contact-card reveal reveal-delay-3"
+              style="flex-direction: column; align-items: flex-start"
+            >
+              <div style="display: flex; gap: 1.2rem; align-items: flex-start">
+                <span class="contact-icon">🕐</span>
+                <div class="contact-label">
+                  <span class="bs-text">Radno vrijeme</span>
+                  <span class="en-text" style="display: none"
+                    >Opening Hours</span
+                  >
+                </div>
+              </div>
+              <div style="margin-top: 1rem; width: 100%">
+                <div class="hours-row">
+                  <span class="hours-day"
+                    ><span class="bs-text">Pon – Pet</span
+                    ><span class="en-text" style="display: none"
+                      >Mon – Fri</span
+                    ></span
+                  >
+                  <span class="hours-time">09:00 – 20:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day"
+                    ><span class="bs-text">Subota</span
+                    ><span class="en-text" style="display: none"
+                      >Saturday</span
+                    ></span
+                  >
+                  <span class="hours-time">10:00 – 18:00</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day"
+                    ><span class="bs-text">Nedjelja</span
+                    ><span class="en-text" style="display: none"
+                      >Sunday</span
+                    ></span
+                  >
+                  <span class="hours-time">
+                    <span class="bs-text">Po dogovoru</span>
+                    <span class="en-text" style="display: none"
+                      >By appointment</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps embed -->
+            <!-- TIP: Replace the src URL with your exact Google Maps embed link -->
+            <div class="map-frame reveal">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45276.31!2d18.4131!3d43.8563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c91d4b8e0e23%3A0xa9c1d26b128e81c3!2sSarajevo%2C%20Bosnia%20and%20Herzegovina!5e0!3m2!1sen!2s!4v1234567890"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+          <!-- /contact-info -->
+
+          <!-- Right: contact form -->
+          <div class="contact-form reveal">
+            <h3>
+              <span class="bs-text">Pošaljite poruku</span>
+              <span class="en-text" style="display: none">Send a message</span>
+            </h3>
+            <p>
+              <span class="bs-text">Odgovaramo u roku od 24h</span>
+              <span class="en-text" style="display: none"
+                >We respond within 24 hours</span
+              >
+            </p>
+
+            <!-- NOTE: Add netlify attribute here when deploying: <form netlify> -->
+            <div class="form-group">
+              <input type="text" placeholder="Vaše ime / Your name" />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Telefon / Phone" />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Vaša poruka / Your message..."></textarea>
+            </div>
+            <button class="btn-primary" style="width: 100%">
+              <span class="bs-text">Pošaljite ↗</span>
+              <span class="en-text" style="display: none">Send message ↗</span>
+            </button>
+
+            <!-- Quick booking CTA -->
+            <div class="booking-cta">
+              <h2>
+                <span class="bs-text">Brza rezervacija</span>
+                <span class="en-text" style="display: none">Quick Booking</span>
+              </h2>
+              <p>
+                <span class="bs-text">Kontaktirajte nas direktno putem:</span>
+                <span class="en-text" style="display: none"
+                  >Contact us directly via:</span
+                >
+              </p>
+              <div class="booking-cta-btns">
+                <a
+                  href="tel:+38767114561"
+                  class="btn-primary"
+                  style="font-size: 0.65rem"
+                  >📞 <span class="bs-text">Pozovite</span
+                  ><span class="en-text" style="display: none">Call us</span></a
+                >
+                <a
+                  href="https://wa.me/38767114561"
+                  target="_blank"
+                  class="btn-outline"
+                  style="font-size: 0.65rem"
+                  >💬 WhatsApp</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- /contact-form -->
+        </div>
+        <!-- /contact-wrap -->
+      </div>
+      <!-- /contact-outer -->
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+    <footer>
+      <div class="footer-inner">
+        <!-- Brand column -->
+        <div>
+          <div class="footer-logo">Balans <em>Masaže</em></div>
+          <p class="footer-tagline">
+            <span class="bs-text"
+              >Vaš prostor za odmor, oporavak i ravnotežu u srcu Sarajeva.</span
+            >
+            <span class="en-text" style="display: none"
+              >Your space for rest, recovery and balance in the heart of
+              Sarajevo.</span
+            >
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://instagram.com/balans.masaze"
+              target="_blank"
+              class="social-btn"
+              >📷</a
+            >
+            <a
+              href="https://wa.me/38767114561"
+              target="_blank"
+              class="social-btn"
+              >💬</a
+            >
+            <a href="tel:+38767114561" class="social-btn">📞</a>
+          </div>
+        </div>
+
+        <!-- Navigation column -->
+        <div class="footer-col">
+          <h4>
+            <span class="bs-text">Navigacija</span
+            ><span class="en-text" style="display: none">Navigation</span>
+          </h4>
+          <ul>
+            <li>
+              <a href="#about"
+                ><span class="bs-text">O nama</span
+                ><span class="en-text" style="display: none">About</span></a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><span class="bs-text">Usluge</span
+                ><span class="en-text" style="display: none">Services</span></a
+              >
+            </li>
+            <li>
+              <a href="#pricing"
+                ><span class="bs-text">Cjenovnik</span
+                ><span class="en-text" style="display: none">Pricing</span></a
+              >
+            </li>
+            <li>
+              <a href="#gallery"
+                ><span class="bs-text">Galerija</span
+                ><span class="en-text" style="display: none">Gallery</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><span class="bs-text">Kontakt</span
+                ><span class="en-text" style="display: none">Contact</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Services column -->
+        <div class="footer-col">
+          <h4>
+            <span class="bs-text">Usluge</span
+            ><span class="en-text" style="display: none">Services</span>
+          </h4>
+          <ul>
+            <li>
+              <a href="#services"
+                ><span class="bs-text">Relaks masaža</span
+                ><span class="en-text" style="display: none"
+                  >Relax Massage</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><span class="bs-text">Medicinska masaža</span
+                ><span class="en-text" style="display: none"
+                  >Medical Massage</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><span class="bs-text">Sportska masaža</span
+                ><span class="en-text" style="display: none"
+                  >Sports Massage</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><span class="bs-text">Hidžama</span
+                ><span class="en-text" style="display: none">Hijama</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <h4>
+            <span class="bs-text">Kontakt</span
+            ><span class="en-text" style="display: none">Contact</span>
+          </h4>
+          <ul>
+            <li><a href="tel:+38767114561">+387 67 11 45 561</a></li>
+            <li>
+              <a href="https://instagram.com/balans.masaze" target="_blank"
+                >@balans.masaze</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bs-text">Sarajevo, BiH</span
+                ><span class="en-text" style="display: none"
+                  >Sarajevo, B&H</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /footer-inner -->
+
+      <div class="footer-bottom">
+        <span class="footer-copy">
+          © 2025 Balans Masaže.
+          <span class="bs-text">Sva prava zadržana.</span>
+          <span class="en-text" style="display: none"
+            >All rights reserved.</span
+          >
+        </span>
+        <div class="footer-divider"></div>
+        <span class="footer-tagline-bottom"
+          >Ravnoteža tijela i uma · Sarajevo</span
+        >
+      </div>
+    </footer>
+
+    <!-- ══════════════════════════════════════════
+       JAVASCRIPT
+       Kept at the bottom so HTML loads first.
+       All logic is in one place for easy editing.
+  ══════════════════════════════════════════ -->
+    <script>
+      // ── 1. LANGUAGE TOGGLE ──────────────────────────────
+      // Switches between Bosnian (.bs-text) and English (.en-text)
+
+      function setLang(lang) {
+        const isBs = lang === "bs";
+        document
+          .querySelectorAll(".bs-text")
+          .forEach((el) => (el.style.display = isBs ? "" : "none"));
+        document
+          .querySelectorAll(".en-text")
+          .forEach((el) => (el.style.display = isBs ? "none" : ""));
+        document.getElementById("btn-bs").classList.toggle("active", isBs);
+        document.getElementById("btn-en").classList.toggle("active", !isBs);
+        document.documentElement.lang = isBs ? "bs" : "en";
+      }
+
+      // ── 2. STICKY NAVBAR ────────────────────────────────
+      // Adds glass background when user scrolls down
+
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      // ── 3. MOBILE MENU ──────────────────────────────────
+      // Opens/closes the fullscreen overlay menu
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const isOpen = menu.classList.toggle("open");
+        document.body.style.overflow = isOpen ? "hidden" : "";
+      }
+
+      // ── 4. FLOATING PARTICLES ───────────────────────────
+      // Creates small gold dots that float upward in the hero
+
+      const particleContainer = document.getElementById("particles");
+
+      function createParticle() {
+        const p = document.createElement("div");
+        p.classList.add("particle");
+
+        const size = Math.random() * 3 + 1; // 1–4px
+        const left = Math.random() * 100; // 0–100%
+        const duration = Math.random() * 12 + 8; // 8–20s
+        const delay = Math.random() * 8; // 0–8s
+
+        p.style.cssText = `
+        width: ${size}px;
+        height: ${size}px;
+        left: ${left}%;
+        animation-duration: ${duration}s;
+        animation-delay: ${delay}s;
+      `;
+
+        particleContainer.appendChild(p);
+
+        // Remove particle from DOM after its animation ends
+        setTimeout(() => p.remove(), (duration + delay) * 1000);
+      }
+
+      // Spawn particles every 600ms, pre-seed 8 on load
+      setInterval(createParticle, 600);
+      for (let i = 0; i < 8; i++) setTimeout(createParticle, i * 200);
+
+      // ── 5. SCROLL REVEAL ────────────────────────────────
+      // Fades in elements with class .reveal when they enter viewport
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target); // only trigger once
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "0px 0px -40px 0px",
+        },
+      );
+
+      revealElements.forEach((el) => revealObserver.observe(el));
+
+      // ── 6. SMOOTH SCROLL ────────────────────────────────
+      // Intercepts anchor clicks for smooth scrolling
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", (e) => {
+          const target = document.querySelector(anchor.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
